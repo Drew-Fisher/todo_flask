@@ -1,0 +1,8 @@
+env-sample
+.gitignore
+__pycache__
+.dockerignore
+dockerfile
+docker-compose.yml
+License
+README.md

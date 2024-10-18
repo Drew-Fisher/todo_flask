@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Board</h1>
+    <div name="board" id="board">
+        {% for column in board %}
+            <div name="column" id="column">
+                <h3>{{ column.status.name }}</h3>
+                {% for todo in column.stubs %}
+                    <div name="stub" id="stub">
+                        {% include 'todo_stub.html' %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
